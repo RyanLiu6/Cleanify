@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-c": "cleanify:toggle"
+    "alt-q": "cleanify:toggle"
   }
 }
