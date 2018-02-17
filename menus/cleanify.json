@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle cleanify",
+        "command": "cleanify:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "cleanify",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "cleanify:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
