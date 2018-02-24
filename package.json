@@ -14,32 +14,5 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-  },
-
-  "schema": {
-    "dictionary": {
-      "title": "User Dictionary",
-      "includeTitle": false,
-      "description":
-        "Contains a list of all words a User would like to remove from their given code base.",
-      "type": "string-list",
-      "default": ["Fuck", "Shit"]
-    },
-    "deleteComments": {
-      "title": "Enables Deleting Comments",
-      "includeTitle": false,
-      "description":
-        "If enabled, Cleanfiy will delete the comments that contain a word from user's dictionary.",
-      "type": "boolean",
-      "default": true
-    },
-    "replaceVariables": {
-      "title": "Enables Replacing Variables",
-      "includeTitle": false,
-      "description":
-        "If enabled, Cleanfiy will replace variable names that contain a word from user's dictionary.",
-      "type": "boolean",
-      "default": true
-    }
   }
 }
