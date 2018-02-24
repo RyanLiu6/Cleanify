@@ -6,7 +6,8 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "cleanify:toggle"
+    "atom-workspace": "cleanify:trigger",
+    "atom-workspace": "cleanify:enable"
   },
   "repository": "https://github.com/ryanliu6/cleanify",
   "license": "MIT",

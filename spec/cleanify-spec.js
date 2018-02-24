@@ -17,7 +17,7 @@ describe('Cleanify', () => {
     activationPromise = atom.packages.activatePackage('cleanify');
   });
 
-  describe('when the cleanify:toggle event is triggered', () => {
+  describe('when the cleanify:trigger event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -25,7 +25,7 @@ describe('Cleanify', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'cleanify:toggle');
+      atom.commands.dispatch(workspaceElement, 'cleanify:trigger');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -39,7 +39,7 @@ describe('Cleanify', () => {
 
         let cleanifyPanel = atom.workspace.panelForItem(cleanifyElement);
         expect(cleanifyPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'cleanify:toggle');
+        atom.commands.dispatch(workspaceElement, 'cleanify:trigger');
         expect(cleanifyPanel.isVisible()).toBe(false);
       });
     });
@@ -57,7 +57,7 @@ describe('Cleanify', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'cleanify:toggle');
+      atom.commands.dispatch(workspaceElement, 'cleanify:trigger');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -67,7 +67,7 @@ describe('Cleanify', () => {
         // Now we can test for view visibility
         let cleanifyElement = workspaceElement.querySelector('.cleanify');
         expect(cleanifyElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'cleanify:toggle');
+        atom.commands.dispatch(workspaceElement, 'cleanify:trigger');
         expect(cleanifyElement).not.toBeVisible();
       });
     });

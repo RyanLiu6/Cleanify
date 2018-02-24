@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle cleanify",
-        "command": "cleanify:toggle"
+        "label": "Activate Cleanify",
+        "command": "cleanify:trigger"
+      },
+      {
+        "label": "Enable Cleanify",
+        "command": "cleanify:enable"
       }
     ]
   },
@@ -12,11 +16,15 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "cleanify",
+          "label": "Cleanify",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "cleanify:toggle"
+              "label": "Activate",
+              "command": "cleanify:trigger"
+            },
+            {
+              "label": "Enable",
+              "command": "cleanify:enable"
             }
           ]
         }
