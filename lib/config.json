@@ -4,7 +4,7 @@
     "description":
       "Contains a list of all words a User would like to remove from their given code base.",
     "type": "array",
-    "default": ["Fuck", "Shit"]
+    "default": ["Fuck", "TODO", "Ryan"]
   },
   "deleteComments": {
     "title": "Enables Deleting Comments",
@@ -25,6 +25,6 @@
     "description":
       "If enabled, will print out debug messages",
     "type": "boolean",
-    "default": false
+    "default": true
   }
 }
