@@ -6,8 +6,8 @@
         "command": "cleanify:trigger"
       },
       {
-        "label": "Enable Cleanify",
-        "command": "cleanify:enable"
+        "label": "Toggle Cleanify",
+        "command": "cleanify:toggle"
       }
     ]
   },
@@ -23,8 +23,8 @@
               "command": "cleanify:trigger"
             },
             {
-              "label": "Enable",
-              "command": "cleanify:enable"
+              "label": "Toggle",
+              "command": "cleanify:toggle"
             }
           ]
         }

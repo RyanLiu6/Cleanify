@@ -1,6 +1,6 @@
 {
   "atom-workspace": {
     "alt-q": "cleanify:trigger",
-    "alt-w": "cleanify:enable"
+    "alt-w": "cleanify:toggle"
   }
 }
