@@ -19,7 +19,7 @@
           "label": "Cleanify",
           "submenu": [
             {
-              "label": "Activate",
+              "label": "Trigger",
               "command": "cleanify:trigger"
             },
             {
