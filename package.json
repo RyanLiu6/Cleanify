@@ -2,7 +2,7 @@
   "name": "cleanify",
   "main": "./lib/cleanify",
   "version": "1.0.1",
-  "description": "A short description of your package",
+  "description": "Cleans code like it's never been clean before!",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "cleanify:toggle"
